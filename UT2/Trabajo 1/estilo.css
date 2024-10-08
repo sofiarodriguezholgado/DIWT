@@ -1,0 +1,169 @@
+#colores-fondos {
+    h2 {
+        color: blueviolet;
+        background-color: lightskyblue;
+        opacity: 0.75;
+    }
+
+    p {
+        color: rgb(230, 255, 230);
+        background-color: green;
+        opacity: 0.75;
+    }
+}
+
+section#tipografia {
+    h2 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 32;
+        font-weight: 10;
+        line-height: -10%;
+    }
+
+    h3 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 27;
+        font-weight: 10;
+        line-height: -20%;
+    }
+
+    p {
+        font-family: 'Cambria, Cochin', Georgia, Times, 'Times New Roman', serif;
+        font-size: 20;
+        font-weight: 10;
+        line-height: -10%;
+    }
+}
+
+#espaciado {
+    margin-left: 5%;
+    padding: 5%;
+    text-align: center;
+}
+
+#bordes-sombras {
+    border: 6px solid rgba(72, 72, 255, 0.678);
+    border-style: dotted;
+    border-radius: 3px;
+    box-shadow: 10px 10px blueviolet;
+}
+
+#posicionamiento {
+    h2, div {
+        position: relative;
+    }
+
+    footer {
+        position: absolute;
+    }
+}
+
+#productos {
+    /*list-style-type: url("huella.png");
+    list-style-image: url(huella.png);*/
+    list-style-position: outside;
+
+    img {
+        height: 10px;
+    }
+
+}
+
+#botones {
+    button {
+        background-color: rgb(250, 179, 250);
+        color: blueviolet;
+        border: 5px solid rgb(78, 19, 133);
+        padding: 30px;
+        border-radius: 10px;
+    }
+}
+
+#tablas {
+
+    table, tr, th, td {
+        border: 5px solid lightskyblue;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+    }
+
+}
+
+#contenedor1 {
+    h2 {
+        margin: 5px;
+        padding: 10px;
+    }
+
+    p {
+        margin: 15px;
+        padding: 5px;
+    }
+
+    ul {
+        li {
+            margin: 20px;
+            padding: 5px;
+        }
+    }
+}
+
+#imagenes {
+    img {
+        width: 15cm;
+        height: 5cm;
+        border: 5px solid lightcoral;
+        border-radius: 10px;
+    }
+}
+
+#formulario {
+    form {
+        border: 5px solid rgba(0, 247, 0, 0.74);
+        padding: 10px;
+        margin: 50px;
+        font-size: medium;
+    }
+}
+
+#enlaces {
+    a {
+        color: orange;
+        text-decoration: white;
+    }
+
+    a:hover {
+        color: rgb(11, 102, 57);
+    }
+}
+
+#efectos-texto {
+    h2 {
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        text-shadow: 10px 10px rgba(135, 206, 250, 0.774);
+    }
+
+    h3 {
+        text-transform: uppercase;
+        letter-spacing: 6px;
+        text-shadow: 10px 10px rgba(135, 206, 250, 0.774);
+    }
+
+    p {
+        text-transform: lowercase;
+        letter-spacing: 4px;
+        text-shadow: 10px 10px rgba(135, 206, 250, 0.774);
+    }
+}
+
+#elementos-linea {
+    #contenedor2 .elemento{
+        img, p {
+            display: inline;
+            margin: 10px;
+            text-align: center;
+        }    
+    }
+}
