@@ -1,0 +1,92 @@
+body {
+    margin: 0px;
+}
+
+.cta-menu li {
+    width: 100px;
+    text-align: center;
+    display: inline-block;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    /*He modificado el color del back-ground para que sea similar a la gama 
+    cromatica de la imagen de fondo*/
+    border-right: 1px solid #7a52e7;
+    float: inline-end;
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    li:last-child a {
+        border-right: none;
+    }
+}
+
+.cta-menu li:hover {
+    /*He modificado el color del back-ground para que sea similar a la gama 
+    cromatica de la imagen de fondo*/
+    background-color: #7a52e7;
+}
+
+.cta-container {
+    background: url(fondo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 60px;
+
+    h2.cta-text {
+        font-size: 28px;
+        font-weight: bolder;
+    }
+
+    .cta-button {
+        /*He modificado el color del back-ground para que sea similar a la gama 
+        cromatica de la imagen de fondo*/
+        background-color: #7a52e7;
+        color: white;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 30px;
+        padding-left: 30px;
+        border: 0px;
+        border-radius: 15px;
+        font-size: 20px;
+        text-transform: uppercase;
+    }
+
+    .cta-button:hover {
+        background-color: rgb(218, 199, 253);
+        color: black;
+        transform: scale(1);
+    }
+
+    .left {
+        font-family: Arial, Helvetica, sans-serif;
+        float: left;
+        color: white;
+        text-decoration: none;
+    }
+    .left:hover {
+        /*He modificado el color para que se vea bien con la imagen de fondo*/
+        color: #78dfff;
+    }
+
+    .right {
+        font-family: Arial, Helvetica, sans-serif;
+        float: inline-end;
+        color: white;
+        text-decoration: none;
+    }
+    .right:hover {
+        /*He modificado el color para que se vea bien con la imagen de fondo*/
+        color: #78dfff;
+    }
+}
