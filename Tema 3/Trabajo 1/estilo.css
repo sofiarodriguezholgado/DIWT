@@ -1,0 +1,45 @@
+/*Ejercicio 1*/
+.caja1{
+    img{
+        width: 800px;
+        height: 600px;
+    }
+}
+@media only screen and (max-width: 2000px) {
+    .caja3 img{
+        min-width: 1024px;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .caja3 img{
+        min-width: 351px;
+        max-width: 1024px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .caja3 img{
+        max-width: 350px;
+    }
+}
+
+
+/*Ejercicio 3*/
+.material-symbols-outlined {
+    font-variation-settings:'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
+
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+}
