@@ -1,0 +1,43 @@
+form{
+    width: 300px;
+    padding: 16px;
+    border-radius: 10px;
+    background-color: #ccc;
+    margin: auto;
+}
+input{
+    width: 180px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+input:invalid{
+    background-color: lightcoral;
+}
+input:valid{
+    background-color: lightgreen;
+}
+#edad:out-of-range{
+    background-color: rgb(255, 151, 31);
+}
+textarea{
+    width: 100%;
+    height: 100px;
+    background-color: #f6f6f6;
+    border-radius: 5px;
+    resize: none;
+}
+#enviar{
+    width: 100%;
+    height: 40px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+label:hover{
+    color: rgb(100, 0, 194);
+}
+.edad{
+    
+}

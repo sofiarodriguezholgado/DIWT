@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <form>
+        <label for="nombre">Nombre: </label>
+        <input type="text" name="nombre" id="nombre" pattern="[A-Za-z]+" placeholder="Escribe tu usuario"><br>
+        
+
+        <label for="contra">Password: </label> 
+        <input type="password" name="contra" id="contra" pattern="[A-Za-z0-9]+" placeholder="Titular de la consulta"><br>
+        
+
+        <label for="correo">Email: </label>
+        <input type="email" name="correo" id="correo" placeholder="Email"><br>
+        
+
+        <label for="telefono">Telefono: </label>
+        <input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" placeholder="+34 666 777 888"><br>
+        
+
+        <label for="url">URL: </label>
+        <input type="url" name="url" id="url" placeholder="http://dominio.com"><br>
+        
+
+        <label for="edad">Edad: </label>
+        <input type="number" name="edad" id="edad" min="18" max="100" pattern="[0-9]{2,3}" placeholder=""><br>
+        
+
+        <label for="fecha">Fecha de nacimiento: </label>
+        <input type="date" name="fecha" id="fecha" placeholder=""><br>
+        
+
+        <label for="mensaje">Mensaje: </label>
+        <textarea name="texto" id="text" maxlength="300" placeholder="Describe brevemente en menos de 300 caracteres"></textarea><br>
+        
+
+        <button type="submit" name="enviar" id="enviar">Enviar</button>
+    </form>
+</body>
+</html>
