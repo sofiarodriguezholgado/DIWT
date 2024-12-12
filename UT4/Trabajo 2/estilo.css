@@ -1,0 +1,30 @@
+div{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    margin-left: 10px;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
+
+#transformar1:hover + #div1{
+    transform: translate(400px, 200px);
+}
+
+#transformar2:hover + #div2{
+    transform: scaleX(3.5);
+    translate: 400px;
+}
+
+#transformar3:hover + #div3{
+    transform: skew(-45deg,15deg);
+}
+
+#transformar4:hover + #div4{
+    transform: rotate(180deg);
+}
+
+#transformar5:hover + #div5{
+    transform: translateX(600px) scale(120%) rotate(45deg) translateY(400px);
+}
