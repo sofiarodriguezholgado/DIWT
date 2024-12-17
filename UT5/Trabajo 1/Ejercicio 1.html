@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <p>Ejemplo de creación de 3 columnas con la clase .col:</p>
+    <div class="container">
+        <div class="row">
+            <div class="col border bg-light">Columna</div>
+            <div class="col border bg-light">Columna</div>
+            <div class="col border bg-light">Columna</div>
+        </div>
+    </div>
+
+    <p>Ejemplo de creación de 3 columnas con la clase .col-4:</p>
+    <div class="container">
+        <div class="row">
+            <div class="col-4 border bg-light">Columna</div>
+            <div class="col-4 border bg-light">Columna</div>
+            <div class="col-4 border bg-light">Columna</div>
+        </div>
+    </div>
+
+    <p>Ejemplo de dos columnas, una que ocupa 4 espacios y otra que ocupa 8 espa-cios:</p> 
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col-4 border bg-light">Contenedor de 4 columnnas</div> 
+            <div class="col-8 border bg-light">Contenedor de 8 columnna</div> 
+        </div> 
+    </div>
+
+    <p>Ejemplo de dos columnas, una que ocupa 4 espacios y otra que ocupa 8 espacios cuando el tamaño de pantalla es inferior a 720px. Cuando el tamaño es superior los contenedores ocuparán 6 espacios cada uno:</p> 
+    <div class="container"> 
+        <div class="row"> 
+            <div class="col-4 col-md-6 border bg-light">Contenedor 1</div> 
+            <div class="col-8 col-md-6 border bg-light">Contenedor 2</div> 
+        </div> 
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
