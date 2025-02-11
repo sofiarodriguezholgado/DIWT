@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #212529;
+        }
+        .carousel img {
+            height: 600px;
+            object-fit: cover;
+        }
+        .card {
+            height: auto;
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 5px;
+        }
+        .btn-primary {
+            background-color: #0056b3;
+            border: none;
+        }
+        .btn-primary:hover {
+            background-color: #004494;
+        }
+        .navbar a {
+            color: #0056b3 !important;
+        }
+        .navbar a:hover {
+            color: #003d82 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <!--Navegador-->
+        <div class="navbar navbar-expand-lg navbar-light bg-light">
+
+            <a class="navbar-brand" href="">TechLearn</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#cursos">Curso</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">Mas</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                            <li><a class="dropdown-item" href="#">Horarios</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Carousel-->
+        <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="5000">
+                    <img src="img1.jpg" class="d-block w-100" alt="Desarrollo de aplicaciones multiplataforma">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Desarrollo de aplicaciones multiplataforma</h2>
+                    </div>
+
+                </div>
+
+                <div class="carousel-item" data-bs-interval="5000">
+                    <img src="img2.jpg" class="d-block w-100" alt="Desarrollo de aplicaciones web">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2>Desarrollo de aplicaciones web</h2>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <!--Tarjetas-->
+        <div class="my-5">
+            <h3 class="text-center" id="cursos">Nuestros cursos</h3>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card shadow rounded">
+                        <img src="img3.jpg" class="card-img-top" alt="Curso de Desarrollo Web Frontend">
+                        <div class="card-body">
+                            <h3>Desarrollo Web Frontend</h3>
+                            <span class="badge bg-primary">799€</span>
+                            <p>Aprende HTML, CSS y JavaScript</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary w-100">Mas informacion</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow rounded">
+                        <img src="img4.webp" class="card-img-top" alt="Curso de Desarrollo Backend">
+                        <div class="card-body">
+                            <h3>Desarrollo Backend</h3>
+                            <span class="badge bg-primary">899€</span>
+                            <p>Aprende PHP, Python y bases de datos</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary w-100">Mas informacion</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card shadow rounded">
+                        <img src="img5.webp" class="card-img-top" alt="Curso de Desarrollo Full Stack Developer">
+                        <div class="card-body">
+                            <h3>Full Stack Developer</h3>
+                            <span class="badge bg-primary">1.299€</span>
+                            <p>Domina el desarrollo web completo</p>
+                        </div>
+
+                        <div class="card-footer">
+                            <a href="#" class="btn btn-primary w-100">Mas informacion</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Formulario-->
+        <div class="container">
+            <h3 class="text-center" id="contacto">Contacto</h3>
+            <div class="row justify-content-center">
+                <div class="col-6">
+                    <form>
+                        <p>Nombre</p>
+                        <input type="text" pattern="[a-zA-Z]{,20}" aria-label="Ingresa tu nombre">
+
+                        <p>Email</p>
+                        <input type="email" aria-label="Ingresa tu correo electrónico">
+
+                        <p>Curso de interes</p>
+                        <select>
+                            <option>Selecciona un curso</option>
+                            <option>Desarrollo Web Frontend</option>
+                            <option>Desarrollo Backend</option>
+                            <option>Full Stack Developer</option>
+                        </select></br>
+
+                        <button type="button" class="btn btn-primary my-3">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
