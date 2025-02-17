@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario accesible</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: #f8f8f8;
+            margin: 20px;
+            padding: 0;
+        }
+        .form-container {
+            width: 80%;
+            max-width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        .form-field {
+            margin-bottom: 15px;
+        }
+        .form-field label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .form-field input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #7c7c7c;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .submit-button {
+            background-color: #7230a8;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .form-field textarea {
+            height: 120px;
+            width: 500px;
+        }
+        .submit-button:hover {
+            background-color: #7000cc;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Formulario</h1>
+        <form>
+            <div class="form-field">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Introduce tu nombre" required>
+            </div>
+
+            <div class="form-field">
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="Introduce tu email" required>
+            </div>
+
+            <div class="form-field">
+                <label for="telefono">Telefono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Introduce tu telefono" required>
+            </div>
+
+            <div class="form-field">
+                <label for="mensaje">Correo electrónico:</label>
+                <textarea id="mensaje" name="mensaje" placeholder="Introduce el mensaje" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Enviar</button>
+        </form>
+    </div>
+</body>
+</html>
