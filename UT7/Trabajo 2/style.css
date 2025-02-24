@@ -1,0 +1,93 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* 1.Cambio de color de fondo */
+@media (min-width: 1025px) {
+    body { background-color: blue; }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    body { background-color: green; }
+}
+@media (max-width: 767px) {
+    body { background-color: red; }
+}
+
+/* 2.Ocultar y mostrar un elemento */
+.mensaje {
+    display: none;
+}
+@media (min-width: 768px) {
+    .mensaje {
+        display: block;
+        background-color: rgb(255, 0, 242);
+        padding: 10px;
+        text-align: center;
+    }
+}
+
+/* 3.Modificar tamaño de texto */
+p {
+    text-align: center;
+}
+@media (min-width: 1201px) {
+    p { font-size: 24px; }
+}
+@media (min-width: 768px) and (max-width: 1200px) {
+    p { font-size: 18px; }
+}
+@media (max-width: 767px) {
+    p { font-size: 14px; }
+}
+
+/* 4.Diseño de columnas responsivas */
+.container {
+    display: flex;
+    gap: 10px;
+}
+.columna {
+    flex: 1;
+    background-color: lightgray;
+    padding: 20px;
+    text-align: center;
+}
+@media (max-width: 1024px) {
+    .container {
+        flex-wrap: wrap;
+    }
+    .columna {
+        flex: 50%;
+    }
+}
+@media (max-width: 767px) {
+    .columna {
+        flex: 100%;
+    }
+}
+
+/* 5.Menú de navegación responsivo */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: black;
+}
+nav ul li {
+    padding: 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 767px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
